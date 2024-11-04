@@ -1,0 +1,6 @@
+Rule1
+ON Time#Timer=1 DO PowerMonitor 1 ENDON
+ON Energy#Current>0.1 DO Publish tele/%topic%/SENSOR {"Current":%value%} ENDON
+RuleTimer1 5
+
+Rule1 1
